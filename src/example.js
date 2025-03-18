@@ -3,13 +3,10 @@
  * @param {number} x - The x-coordinate.
  * @param {number} y - The y-coordinate.
  * @param {number} radius - The radius of the circle.
- * @param {string} color - The fill color of the circle.
- * @param {string} [borderColor] - The optional border color.
+ * @param {string} color - The fill color to be used.
+ 
  */
 function drawCircle(x, y, radius, color) {
     fill(color);
-    if (borderColor) {
-        stroke(borderColor);
-    }
     ellipse(x, y, radius);
 }
